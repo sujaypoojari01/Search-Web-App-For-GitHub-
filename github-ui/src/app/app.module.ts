@@ -1,7 +1,7 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { ReactiveFormsModule } from '@angular/forms';
-import { HttpClient } from '@angular/common/http';
+import { HttpClientModule } from '@angular/common/http';
 
 import { AppComponent } from './app.component';
 import { UserComponent } from './components/user/user.component';
@@ -17,7 +17,7 @@ import { GithubService } from './services/github.service';
   imports: [
     BrowserModule,
     ReactiveFormsModule,
-    HttpClient,
+    HttpClientModule,
   ],
   providers: [GithubService],
   bootstrap: [AppComponent]
